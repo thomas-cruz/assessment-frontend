@@ -10,7 +10,7 @@ axios.interceptors.response.use(null, (error: AxiosError) => {
     error.response &&
     error.response.status >= 400 &&
     error.response.status < 500;
-  // Handle unexpected errors
+
   if (!expectedError) {
     Swal.fire({
       icon: "error",

@@ -220,9 +220,8 @@ const Dashboard: React.FC = () => {
           </button>
         </form>
       </div>
-      {/* Chart and Data Section */}
       <div className="p-6">
-        <h2 className="text-center text-3xl font-semibold mb-4">DATA</h2>
+        <h2 className="text-center text-black text-3xl font-semibold mb-4">DATA</h2>
         <p className="text-center text-gray-500 mb-8">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
@@ -237,7 +236,7 @@ const Dashboard: React.FC = () => {
             register={register}
             errors={errors}
           />
-          {/* Chart */}
+          {/* graph */}
           <div className="w-full md:w-1/2 lg:w-1/3">
             <ParticipationChart data={data} options={options} />
           </div>
